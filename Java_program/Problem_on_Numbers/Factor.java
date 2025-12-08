@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 class Logic
 {
-    int iNo = 0;
+    int iNo ;
     
     public Logic(int iNo)
     {
@@ -57,7 +57,7 @@ class Factor
 
             Scanner sobj = new Scanner(System.in);
         
-            System.out.println("Enter first number:");
+            System.out.println("Enter the  number:");
             iValue = sobj.nextInt();
 
             Logic lobj = new Logic(iValue);
@@ -73,4 +73,5 @@ class Factor
 //  Input1:6                   Output:1  2  3  4  6
 //  Input1:12                  Output:1  2  3  4  6  12
 //
+
 //////////////////////////////////////////////////////////////////////////////////////////////
