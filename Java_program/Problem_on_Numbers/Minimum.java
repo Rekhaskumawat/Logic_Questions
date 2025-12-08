@@ -11,7 +11,7 @@ import java.util.Scanner;
 //  Class Name :    Logic
 //  Function Name : Minimum
 //  Description :   Returns the Smallest number
-//  Input :         Integer
+//  Input :         Integer , Integer , Integer
 //  output :        Integer
 //  Author :        Rekha Shankarlal Kumawat
 //  Date :          03/12/2025
@@ -20,9 +20,9 @@ import java.util.Scanner;
 
 class Logic
 {
-    int iNo1 = 0;
-    int iNo2 = 0 ;
-    int iNo3 = 0 ;
+    int iNo1 ;
+    int iNo2 ;
+    int iNo3 ;
 
     public Logic(int iNo1 , int iNo2 , int iNo3)
     {
@@ -97,4 +97,5 @@ class Minimum
 //  Input1:6      Input2:15       Input3:32         Output:Minimun  numbers :6
 //  Input1:23     Input2:43      Input3:54          Output:Minimun  numbers :23
 //
+
 //////////////////////////////////////////////////////////////////////////////////////////////
