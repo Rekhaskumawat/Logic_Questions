@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 class Logic
 {
-    int iNo = 0;
+    int iNo ;
     
     public Logic(int iNo)
     {
@@ -84,4 +84,5 @@ class PerfactNumber
 //  Input1:6                   Output:6 is perfect number
 //  Input1:23                  Output:23 is not perfect number
 //
+
 //////////////////////////////////////////////////////////////////////////////////////////////
