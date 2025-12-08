@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 class Logic
 {
-    int iNo = 0;
+    int iNo ;
     
     public Logic(int iNo)
     {
@@ -55,7 +55,7 @@ class Factorial
             int iRet = 0 ;
             Scanner sobj = new Scanner(System.in);
         
-            System.out.println("Enter first number:");
+            System.out.println("Enter the number:");
             iValue = sobj.nextInt();
 
             Logic lobj = new Logic(iValue);
@@ -72,4 +72,5 @@ class Factorial
 //  Input1:5                   Output:Factorial of 5 is:120
 //  Input1:3                   Output:Factorial of 3 is:6
 //
+
 //////////////////////////////////////////////////////////////////////////////////////////////
