@@ -1,0 +1,76 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//required header file
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<stdbool.h>
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : nivenNumber
+//  Description :   check number is niven number or not
+//  Input :         Integer
+//  output :        Boolean
+//  Author :        Rekha Shankarlal Kumawat
+//  Date :          09/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+bool nivenNumber(int iNo)
+{
+    int iDigit = 0 ;
+    int iSum = 0 ;
+    int itemp = iNo;
+    while(iNo != 0 )
+    {
+        iDigit = iNo % 10 ;
+        iNo = iNo /10 ;
+        iSum = iSum + iDigit;
+    }
+    if((itemp % iSum) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+}// end of nivenNumber function
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    
+    bool bRet = false ;
+    int iValue = 0 ;
+
+    printf("Enter the number :\n");
+    scanf("%d",&iValue);
+
+    bRet =nivenNumber(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is Niven number\n", iValue);
+    }
+    else
+    {
+        printf("%d is not Niven number\n", iValue);
+    }
+
+}//end of main function
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1:12                   Output:12 is Niven number
+//  Input1:15                   Output:15 is not Niven number
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
