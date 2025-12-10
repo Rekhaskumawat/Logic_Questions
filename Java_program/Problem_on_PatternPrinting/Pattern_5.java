@@ -1,0 +1,73 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//required header file
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+import java.util.Scanner;
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :    Pattern
+//  Function Name : pattern
+//  Description :   Display pattern
+//  Input :         Integer 
+//  output :        void
+//  Author :        Rekha Shankarlal Kumawat
+//  Date :          10/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+class Pattern
+{
+    int iNo ;
+
+    public Pattern(int iNo)
+    {
+        this.iNo = iNo ;
+    }
+
+    public void pattern()
+    {
+        int iCnt = 0 ;
+
+        for(iCnt = 1 ; iCnt <= 2*iNo ; iCnt++ )
+        {
+            if((iCnt % 2 ) == 0)
+            {
+                System.out.print(iCnt+"\t");
+            }
+            
+        }
+    }
+}//end of Pattern class
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//Entery point class
+//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+class Pattern_5
+{
+    public static void main(String A[])
+    {
+        int iValue = 0 ;
+
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the number:");
+        iValue = sobj.nextInt();
+
+        Pattern pobj = new Pattern(iValue);
+        pobj.pattern();
+    }
+}// end of main class
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Input1: 8                       Output: 2  4  6  8  10  12  14  16
+//
+//  Input1: 4                       Output: 2  4  6  8
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
