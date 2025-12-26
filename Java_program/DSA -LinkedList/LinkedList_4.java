@@ -22,19 +22,19 @@ class node
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //  Class Name  : DoublyLL
-//  Description : implementation of Doubly Linear Linked List
+//  Description : implementation of Doubly Circular Linked List
 //  Author      : Rekha Kumawat
 //  Date        : 25/12/2025
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-class DoublyLL
+class DoublyCL
 {
     private node first;
     private node last ;
     private int iCount;
 
-    public DoublyLL()
+    public DoublyCL()
     {
         this.first =null;
         this.last = null;
@@ -298,10 +298,10 @@ class LinkedList_4
 {
     public static void main(String Arr[])
     {
-        DoublyLL obj =null;
+        DoublyCL obj =null;
         int iRet = 0 ;
 
-        obj = new DoublyLL();
+        obj = new DoublyCL();
 
         obj.InsertFirst(51);
         obj.InsertFirst(21);
@@ -357,4 +357,5 @@ class LinkedList_4
 //     <=>| 21 |<=> | 51 |<=> | 101 |<=> | 111 |<=> 
 //    Number of node are :4
 //
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
